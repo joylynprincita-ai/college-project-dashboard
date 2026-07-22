@@ -1,0 +1,36 @@
+### Login
+POST http://127.0.0.1:8000/api/users/login/
+Content-Type: application/json
+
+{
+    "college_id": "STU101@gmail.com",
+    "password": "stu@12345678"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/projects/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NzQ5NzA0LCJpYXQiOjE3ODQ3NDYxMDQsImp0aSI6IjQxNjIyODM1YjZkODQ2OGE5NDkxYmI3MmY0NGRhYjM0IiwidXNlcl9pZCI6IjIifQ.7HpdQkK7Y5a2DjlT24qMGg8xgVU_oZH08FJYmtrUHoQ
+
+###
+
+POST http://127.0.0.1:8000/api/projects/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NzQ5NzA0LCJpYXQiOjE3ODQ3NDYxMDQsImp0aSI6IjQxNjIyODM1YjZkODQ2OGE5NDkxYmI3MmY0NGRhYjM0IiwidXNlcl9pZCI6IjIifQ.7HpdQkK7Y5a2DjlT24qMGg8xgVU_oZH08FJYmtrUHoQ
+Content-Type: application/json
+
+{
+    "title": "College Attendance System",
+    "description": "A web application to manage student attendance.",
+    "mentor": null,
+    "created_by": 2,
+    "deadline": "2026-12-31",
+    "status": "pending"
+}
+###
+
+GET http://127.0.0.1:8000/api/tasks/tasks/
+
+###
+
+GET http://127.0.0.1:8000/api/dashboard/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NzQ5NzA0LCJpYXQiOjE3ODQ3NDYxMDQsImp0aSI6IjQxNjIyODM1YjZkODQ2OGE5NDkxYmI3MmY0NGRhYjM0IiwidXNlcl9pZCI6IjIifQ.7HpdQkK7Y5a2DjlT24qMGg8xgVU_oZH08FJYmtrUHoQ
